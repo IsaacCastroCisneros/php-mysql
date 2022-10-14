@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="./db/POST.php"><!-- ruta del script relativo al index -->
+        <div>
+            <label for="estado">estado</label>
+            <input name="estado" type="text">
+        </div>
+        <div>
+            <label for="codigo">codigo</label>
+            <input name="codigo" type="text">
+        </div>
+        <div>
+            <label for="dato">dato</label>
+            <input name="dato" type="text">
+        </div>
+        <button type="submit">enviar</button>
+    </form>
+    <form method="GET" action="./db/GET.php">
+        <div>
+            <label for="codigo">codigo</label>
+            <input name="codigo" type="text">
+        </div>
+        <button type="submit">
+            consultar por codigo
+        </button>
+    </form>
+    <a href="#si">
+        clickme
+    </a>
+    <section id="si">
+        yoloo
+    </section>
+    <script>
+
+        /* document.querySelector('[data-form]').addEventListener('submit',async e=>
+        {
+            e.preventDefault();
+            
+            const estado = e.target.querySelector('[data-estado]').value
+            const codigo = e.target.querySelector('[data-codigo]').value
+            const dato = e.target.querySelector('[data-dato]').value
+
+            const data = 
+            {
+                estado,
+
+            }
+
+            const url = '8080/pag/db/conexion.php'
+
+            const req = await fetch(url,
+            {
+                method:'POST',
+                headers:
+                {
+                    'Content-Type': 'application/json'
+                },
+                body:JSON.stringify()
+            });
+        }) */
+    </script>
+<!--     <button>
+        leer
+    </button> -->
+</body>
+</html>

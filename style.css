@@ -1,0 +1,10 @@
+html
+{
+  scroll-behavior: smooth;
+}
+#si
+{
+    display: block;
+    height: 50rem;
+    background-color: blueviolet;
+}
